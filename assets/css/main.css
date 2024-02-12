@@ -1,12 +1,27 @@
-/*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
-*/
-
-/*
-1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
-2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-*/
-
+@layer base {
+	:root {
+		--blue: #0d6efd;
+		--gray: #6c757d;
+		--green: #198754;
+		--red: #ff1a1a;
+        --mint: '#67B99A',
+        --zomp: '#56AB91',
+        --pineGreen: '#248277',
+        --skobeloff: '#14746F',
+        --carrabianCurr: '#036666',
+        --celadon: '#88D4AB',
+        --thistle : '#DAC3E8',
+        --lightWisteria :'#D2B7E5',
+        --wisteria :'#C19EE0',
+        --lavendar :'#B185DB',
+        --amethyst:'#A06CD5',
+        --royalPurple :'#7251B5',
+        --veryDarkblue :'#001d3d',
+        --viridian : '#358F80',
+        --VeryLightGray : '#d9d9d9',
+	}
+}
+/* [color:var(--veryDarkblue)] */
 *,
 ::before,
 ::after {
@@ -1292,9 +1307,6 @@ body {
 	}
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body {
 	background-color: #effbf3;

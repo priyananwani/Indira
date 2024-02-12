@@ -13,6 +13,7 @@
 			referrerpolicy="no-referrer"
 		/>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="./assets/js/script.js"></script>
 	</head>
 	<body>
 		<!--navbar-->
@@ -34,7 +35,9 @@
 					class="items-center justify-between absolute right-24 float-right hidden md:flex space-x-10 px-6"
 				>
 					<li class="flex relative group">
-						<a href="about.html" class="hover:text-zomp"
+						<a
+							href="about.html"
+							class="hover:text-[color:var(--[color:var(--zomp)])]"
 							>ABOUT US</a
 						>
 					</li>
@@ -97,7 +100,11 @@
 					</li>
 
 					<li class="flex relative group">
-						<a href="#" class="hover:text-zomp">PRICING</a>
+						<a
+							href="#"
+							class="hover:text-[color:var(--[color:var(--zomp)])]"
+							>PRICING</a
+						>
 					</li>
 					<li class="flex realtive group">
 						<button
@@ -113,7 +120,7 @@
 				<!--Hamburg Icon-->
 				<button
 					id="menu-btn"
-					class="open block hamburger md:hidden focus:outline-none"
+					class="open block hamburger md:hidden focus:outline-none menu-btn"
 				>
 					<span class="hamburger-top"></span>
 					<span class="hamburger-middle"></span>
@@ -124,7 +131,7 @@
 			<div class="md:hidden">
 				<div
 					id="menu"
-					class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+					class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md menu"
 				>
 					<a href="about.html">About Us</a>
 					<a href="#">Pricing</a>
@@ -133,7 +140,7 @@
 					<a href="#">Market</a>
 					<a
 						href="login.html"
-						class="md:block p-3 px-6 pt-2 my-5 mt-6 text-white bg-skobeloff rounded-lg middle hover:bg-zomp md:block"
+						class="md:block p-3 px-6 pt-2 my-5 mt-6 text-white bg-skobeloff rounded-lg middle hover:bg-[color:var(--[color:var(--zomp)])] md:block"
 					>
 						Login<!--bg-royalPurple-->
 					</a>
@@ -304,16 +311,49 @@
 				<!--List container-->
 				<div class="flex justify-around space-x-32">
 					<div class="flex flex-col space-y-3 text-white">
-						<a href="#" class="hover:text-zomp">Home</a>
-						<a href="#" class="hover:text-zomp">Pricing</a>
-						<a href="#" class="hover:text-zomp">Products</a>
-						<a href="#" class="hover:text-zomp">About</a>
+						<a
+							href="#"
+							class="hover:text-[color:var(--[color:var(--zomp)])]"
+							>Home</a
+						>
+						<a
+							href="#"
+							class="hover:text-[color:var(--[color:var(--zomp)])]"
+							>Pricing</a
+						>
+						<a
+							href="#"
+							class="hover:text-[color:var(--[color:var(--zomp)])]"
+							>Products</a
+						>
+						<a
+							href="#"
+							class="hover:text-[color:var(--[color:var(--zomp)])]"
+							>About</a
+						>
 					</div>
 					<div class="flex flex-col space-y-3 text-white">
-						<a href="#" class="hover:text-zomp">Career</a>
-						<a href="#" class="hover:text-zomp">Community</a>
-						<a href="#" class="hover:text-zomp">Privacy Policy</a>
-						<a href="#" class="hover:text-zomp"> Help</a>
+						<a
+							href="#"
+							class="hover:text-[color:var(--[color:var(--zomp)])]"
+							>Career</a
+						>
+						<a
+							href="#"
+							class="hover:text-[color:var(--[color:var(--zomp)])]"
+							>Community</a
+						>
+						<a
+							href="#"
+							class="hover:text-[color:var(--[color:var(--zomp)])]"
+							>Privacy Policy</a
+						>
+						<a
+							href="#"
+							class="hover:text-[color:var(--[color:var(--zomp)])]"
+						>
+							Help</a
+						>
 					</div>
 				</div>
 				<!--Input container-->
@@ -326,7 +366,7 @@
 								placeholder="Updated in your inbox"
 							/>
 							<button
-								class="px-6 py-2 text-white rounded-full bg-skobeloff hover:bg-zomp focus:outline-none"
+								class="px-6 py-2 text-white rounded-full bg-skobeloff hover:bg-[color:var(--[color:var(--zomp)])] focus:outline-none"
 							>
 								Go
 							</button>
