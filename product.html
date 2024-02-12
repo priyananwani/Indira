@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Indira</title>
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<!--navbar-->
+		<nav class="container mxx-auto p-6 flow-root">
+			<!--flex-container-->
+			<div class="container flex items-center justify-between">
+				<!--logo-->
+				<div class="pt-2">
+					<a href="/">
+						<img
+							src="https://www.indiratrade.com/App_Themes/images/Logo.svg"
+							alt="logo"
+						/>
+					</a>
+				</div>
+
+				<!--Menu items-->
+				<div
+					class="items-center justify-between absolute right-24 float-right hidden md:flex space-x-10 px-6"
+				>
+					<li class="flex relative group">
+						<a href="about.html" class="hover:text-zomp"
+							>ABOUT US</a
+						>
+					</li>
+					<!--lavender-->
+					<li class="flex relative group">
+						<a href="#" class="mr-1">PRODUCT</a>
+						<i class="fa-solid fa-chevron-down fa-2xs pt-3"></i>
+						<!-- Submenu starts -->
+						<ul
+							class="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
+						>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Equity</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Commodities</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Derivatives</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Algo</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">IPO</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Currency</a>
+							</li>
+						</ul>
+						<!-- Submenu ends -->
+					</li>
+					<li class="flex relative group">
+						<a href="#" class="mr-1">MARKET</a>
+						<i class="fa-solid fa-chevron-down fa-2xs pt-3"></i>
+						<!-- Submenu starts -->
+						<ul
+							class="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
+						>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Equity Market</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Derivative</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Currency</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Mutual Fund</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Calculator</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">IPO Analysis</a>
+							</li>
+						</ul>
+						<!-- Submenu ends -->
+					</li>
+
+					<li class="flex relative group">
+						<a href="#" class="hover:text-zomp">PRICING</a>
+					</li>
+					<li class="flex realtive group">
+						<button
+							type="button"
+							class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 loginBtn"
+						>
+							<a href="login.html">Login</a>
+						</button>
+					</li>
+				</div>
+				<!--Button-->
+
+				<!--Hamburg Icon-->
+				<button
+					id="menu-btn"
+					class="open block hamburger md:hidden focus:outline-none"
+				>
+					<span class="hamburger-top"></span>
+					<span class="hamburger-middle"></span>
+					<span class="hamburger-bottom"></span>
+				</button>
+			</div>
+			<!--Mobile Menu-->
+			<div class="md:hidden">
+				<div
+					id="menu"
+					class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+				>
+					<a href="about.html">About Us</a>
+					<a href="#">Pricing</a>
+					<a href="#">Product</a>
+					<a href="#">Career</a>
+					<a href="#">Market</a>
+					<a
+						href="login.html"
+						class="md:block p-3 px-6 pt-2 my-5 mt-6 text-white bg-skobeloff rounded-lg middle hover:bg-zomp md:block"
+					>
+						Login<!--bg-royalPurple-->
+					</a>
+				</div>
+			</div>
+		</nav>
+		<!--Hero Section-->
+		<section id="hero">
+			<div
+				class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0"
+			>
+				<!--left item-->
+				<div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+					<h1
+						class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+					>
+						Indira Securities, India's top broking company
+					</h1>
+					<p class="max-w-sm text-center text-black md:text-left">
+						We invite you to browse through our website and product
+						catalog and discover the range of services we provide.
+						We assure you an enriching and life-turning experience
+						which will enable you to reach new heights in your
+						financial career. Thank you for choosing Indira Group as
+						your Financial Consultant. We wish you all the best for
+						your future
+					</p>
+					<div class="flex justify-center md:justify-start">
+						<a
+							href="login.html"
+							class="p-3 px-6 pt-2 text-white bg-skobeloff rounded-lg baseline hover:bg-zomp"
+							>Get started</a
+						>
+					</div>
+				</div>
+				<!--Image-->
+				<div class="float-right md:w-1/2">
+					<img src="./assets/img/homepagePlaceholder.png" alt="pic" />
+				</div>
+			</div>
+		</section>
+		<!--Feauture section-->
+		<section id="feauters">
+			<!--flex container-->
+			<div
+				class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
+			>
+				<!--Whats different-->
+				<div class="flex flex-col space-y-0 md:w-1/2">
+					<h2
+						class="max-w-md text-4xl font-bold text-center md:text-left"
+					>
+						What products and services we provide?
+					</h2>
+					<p class="max-w-sm text-center text-black md:text-left">
+						At our core, we are traders. We believe in the power of
+						the stock market and the wonders it can do for your
+						personal wealth. We bring a healthy balance of
+						curiosity, experience and wisdom to provide with the
+						best.
+					</p>
+				</div>
+				<!--Numbered list-->
+				<div class="flex flex-col space-y-8 md:w-1/2">
+					<!--List items1-->
+					<div
+						class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+					>
+						<!--Heading-->
+						<div
+							class="rounded-l-full bg- celadon md:bg-transparent"
+						>
+							<div class="flex item-center space-x-2">
+								<div
+									class="px-4 py-2 text-white rounded-full md:py-1 bg-pineGreen"
+								>
+									01
+								</div>
+								<h3
+									class="text-base font-bold md:mb-4 md:hidden"
+								>
+									Online Equity Trading
+								</h3>
+							</div>
+						</div>
+						<div>
+							<h3 class="hidden mb-4 text-lg font-bold md:block">
+								Online Equity Trading
+							</h3>
+							<p class="text-black">
+								One must keep himself updated about various
+								terms and issues related to the market in order
+								to understand things in a better way. The Indira
+								group, one of the top equity brokers in India
+								helps such individuals in achieving their goals
+								in equity market trading.
+							</p>
+						</div>
+					</div>
+					<!--list item2-->
+					<div
+						class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+					>
+						<!--Heading-->
+						<div
+							class="rounded-l-full bg-celadon md:bg-transparent"
+						>
+							<div class="flex item-center space-x-2">
+								<div
+									class="px-4 py-2 text-white rounded-full md:py-1 bg-pineGreen"
+								>
+									02
+								</div>
+								<h3
+									class="text-base font-bold md:mb-4 md:hidden"
+								>
+									Open Online Commodity Demat Account Today!
+								</h3>
+							</div>
+						</div>
+						<div>
+							<h3 class="hidden mb-4 text-lg font-bold md:block">
+								Open Online Commodity Demat Account Today!
+							</h3>
+							<p class="text-black">
+								Indira Securities Limited the youngest venture
+								of Indira Group was formalized in the year 2004.
+								The company rigorously exercises to provide
+								quality services in the field of commodity
+								market \& trading
+							</p>
+						</div>
+					</div>
+					<!--list item3-->
+					<div
+						class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+					>
+						<!--Heading-->
+						<div
+							class="rounded-l-full bg-celadon md:bg-transparent"
+						>
+							<div class="flex item-center space-x-2">
+								<div
+									class="px-4 py-2 text-white rounded-full md:py-1 bg-pineGreen"
+								>
+									03
+								</div>
+								<h3
+									class="text-base font-bold md:mb-4 md:hidden"
+								>
+									IPO
+								</h3>
+							</div>
+						</div>
+						<div>
+							<h3 class="hidden mb-4 text-lg font-bold md:block">
+								IPO
+							</h3>
+							<p class="text-black">
+								An Initial Public Offer (IPO) is the first sale
+								of shares to the public by a privately owned
+								company.The stock market investor can apply for
+								IPO Stocks auction in India by opening a demat
+								account with Indira Securities and filling an
+								online IPO application.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--CTA Section-->
+		<section id="cta" class="bg-viridian mt-10">
+			<!--Flex container-->
+			<div
+				class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
+			>
+				<!--Heading-->
+				<h3
+					class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left"
+				>
+					CORPORATE OFFICE
+				</h3>
+
+				<p>
+					04 Amar Darshan, 28/02, Old Palasia, Saket Nagar, Indore,
+					Madhya Pradesh 452018.
+				</p>
+
+				<!--Button-->
+				<div>
+					<a
+						href="#"
+						class="p-3 px-6 pt-2 text-skobeloff bg-white rounded-full shadow-2xl baseline hover:bg-zomp"
+						>Directions</a
+					>
+				</div>
+			</div>
+		</section>
+		<!--Footer-->
+		<footer class="bg-veryDarkblue">
+			<!--flex container-->
+			<div
+				class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+			>
+				<!--Logo and social links container-->
+				<div
+					class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+				>
+					<div class="mx-auto my-6 text-center text-white md:hidden">
+						Copyright &copy; 2022,All Rights Reserved
+					</div>
+					<!--Logo-->
+					<div>
+						<img
+							src="https://www.indiratrade.com/App_Themes/images/Logo.svg"
+							alt="logo"
+						/>
+					</div>
+					<!--Social Links-->
+					<div class="flex justify-center space-x-4">
+						<!--Link1-->
+						<a href="#">
+							<img
+								src="./assets/img/fbLogo.png"
+								alt="fb"
+								class="h-8"
+							/>
+						</a>
+						<!--Link2-->
+						<a href="#">
+							<img
+								src="./assets/img/wpLogo.jpg"
+								alt="wb"
+								class="h-8"
+							/>
+						</a>
+						<!--Link3-->
+						<a href="#">
+							<img
+								src="./assets/img/instaLogo.jpg"
+								alt="insta"
+								class="h-8"
+							/>
+						</a>
+						<!--Link4-->
+						<a href="#">
+							<img
+								src="./assets/img/linkedinLogo.png"
+								alt="fb"
+								class="h-8"
+							/>
+						</a>
+					</div>
+				</div>
+				<!--List container-->
+				<div class="flex justify-around space-x-32">
+					<div class="flex flex-col space-y-3 text-white">
+						<a href="#" class="hover:text-zomp">Home</a>
+						<a href="#" class="hover:text-zomp">Pricing</a>
+						<a href="#" class="hover:text-zomp">Products</a>
+						<a href="about.html" class="hover:text-zomp">About</a>
+					</div>
+					<div class="flex flex-col space-y-3 text-white">
+						<a href="#" class="hover:text-zomp">Career</a>
+						<a href="#" class="hover:text-zomp">Community</a>
+						<a href="#" class="hover:text-zomp">Privacy Policy</a>
+						<a href="#" class="hover:text-zomp"> Help</a>
+					</div>
+				</div>
+				<!--Input container-->
+				<div class="flex flex-col justify-between">
+					<form>
+						<div class="flex space-x-3">
+							<input
+								type="text"
+								class="flex-1 px-4 rounded full focus:outline-none"
+								placeholder="Updated in your inbox"
+							/>
+							<button
+								class="px-6 py-2 text-white rounded-full bg-skobeloff hover:bg-zomp focus:outline-none"
+							>
+								Go
+							</button>
+						</div>
+					</form>
+					<div class="hidden text-white md:block">
+						Copyright &copy; 2022,All Rights Reserved
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>
