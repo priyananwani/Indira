@@ -4,13 +4,20 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Indira</title>
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
 	<body>
-		<!--navbar-->
 		<nav class="container mxx-auto p-6 flow-root">
 			<!--flex-container-->
-			<div class="flex items-center justify-between">
+			<div class="container flex items-center justify-between">
 				<!--logo-->
 				<div class="pt-2">
 					<a href="/">
@@ -20,23 +27,88 @@
 						/>
 					</a>
 				</div>
+
 				<!--Menu items-->
 				<div
-					class="absolute right-24 float-right hidden md:flex space-x-10 px-6"
+					class="items-center justify-between absolute right-24 float-right hidden md:flex space-x-10 px-6"
 				>
-					<a href="about.html" class="hover:text-zomp">ABOUT US</a
-					><!--lavender-->
-					<a href="#" class="hover:text-zomp">PRODUCT</a>
-					<a href="#" class="hover:text-zomp">MARKET</a>
-					<a href="#" class="hover:text-zomp">PRICING</a>
+					<li class="flex relative group">
+						<a href="about.html" class="hover:text-zomp"
+							>ABOUT US</a
+						>
+					</li>
+					<!--lavender-->
+					<li class="flex relative group">
+						<a href="#" class="mr-1">PRODUCT</a>
+						<i class="fa-solid fa-chevron-down fa-2xs pt-3"></i>
+						<!-- Submenu starts -->
+						<ul
+							class="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
+						>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Equity</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Commodities</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Derivatives</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Algo</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">IPO</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Currency</a>
+							</li>
+						</ul>
+						<!-- Submenu ends -->
+					</li>
+					<li class="flex relative group">
+						<a href="#" class="mr-1">MARKET</a>
+						<i class="fa-solid fa-chevron-down fa-2xs pt-3"></i>
+						<!-- Submenu starts -->
+						<ul
+							class="absolute bg-white p-3 w-52 top-6 transform scale-0 group-hover:scale-100 transition duration-150 ease-in-out origin-top shadow-lg"
+						>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Equity Market</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Derivative</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Currency</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Mutual Fund</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">Calculator</a>
+							</li>
+							<li class="text-sm hover:bg-slate-100 leading-8">
+								<a href="#">IPO Analysis</a>
+							</li>
+						</ul>
+						<!-- Submenu ends -->
+					</li>
+
+					<li class="flex relative group">
+						<a href="#" class="hover:text-zomp">PRICING</a>
+					</li>
+					<li class="flex realtive group">
+						<button
+							type="button"
+							class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 loginBtn"
+						>
+							<a href="login.html">Login</a>
+						</button>
+					</li>
 				</div>
 				<!--Button-->
-				<a
-					href="login.html"
-					class="absolute right-0 md:block p-3 px-6 pt-2 my-5 mt-6 text-white bg-skobeloff rounded-lg middle hover:bg-zomp md:block loginBtn"
-				>
-					Login<!--bg-royalPurple-->
-				</a>
+
 				<!--Hamburg Icon-->
 				<button
 					id="menu-btn"
@@ -98,7 +170,7 @@
 				</div>
 				<!--Image-->
 				<div class="float-right md:w-1/2">
-					<img src="HOME-PAGE-IMAGE-3.png" alt="pic" />
+					<img src="./assets/img/homepagePlaceholder.png" alt="pic" />
 				</div>
 			</div>
 		</section>
@@ -285,19 +357,35 @@
 					<div class="flex justify-center space-x-4">
 						<!--Link1-->
 						<a href="#">
-							<img src="fb2 logo.png" alt="fb" class="h-8" />
+							<img
+								src="./assets/img/fbLogo.png"
+								alt="fb"
+								class="h-8"
+							/>
 						</a>
 						<!--Link2-->
 						<a href="#">
-							<img src="wp logo.jpg" alt="wb" class="h-8" />
+							<img
+								src="./assets/img/wpLogo.jpg"
+								alt="wb"
+								class="h-8"
+							/>
 						</a>
 						<!--Link3-->
 						<a href="#">
-							<img src="insta logo.jpg" alt="insta" class="h-8" />
+							<img
+								src="./assets/img/instaLogo.jpg"
+								alt="insta"
+								class="h-8"
+							/>
 						</a>
 						<!--Link4-->
 						<a href="#">
-							<img src="linkedin logo.png" alt="fb" class="h-8" />
+							<img
+								src="./assets/img/linkedinLogo.png"
+								alt="fb"
+								class="h-8"
+							/>
 						</a>
 					</div>
 				</div>
@@ -338,6 +426,6 @@
 				</div>
 			</div>
 		</footer>
-		<script src="script.js"></script>
+		<script src="./assets/js/script.js"></script>
 	</body>
 </html>
