@@ -20,6 +20,8 @@
         --viridian : '#358F80',
         --VeryLightGray : '#d9d9d9',
 	}
+
+	
 }
 /* [color:var(--veryDarkblue)] */
 *,
@@ -939,7 +941,7 @@ video {
 .p-2 {
 	padding: 0.5rem;
 }
-
+ff1a1a
 .p-5 {
 	padding: 1.25rem;
 }
